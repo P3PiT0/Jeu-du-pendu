@@ -13,7 +13,8 @@ def Trouve (mot, lettre):
         return True
     else: 
         return False
-    
+
+#FONCTION POUR AFFICHER LE MOT 
 def afficher_mot(mot):
     for i in mot :
         print(i,end=" ") 
@@ -34,7 +35,6 @@ def jeu_pendu (mot):
         lettre = (input("Choisissez une lettre : "))    
         if alphabet_restant.count(lettre) == 0 : 
             print('La lettre a déjà été choisie, rééssayer avec une des lettres restantes : ')
-            #print(alphabet_restant)
             afficher_mot(alphabet_restant)
         else: 
             alphabet_restant.remove(lettre)
