@@ -54,7 +54,7 @@ judicieuse
 laicite
 mortier
 panache
-relâche
+relache
 serment
 surprenant
 abimer
@@ -65,7 +65,7 @@ deriver
 embusque
 emprunt
 essaimer
-fantôme
+fantome
 foison
 gavroche
 guimauve
