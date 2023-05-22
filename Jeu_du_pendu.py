@@ -35,8 +35,8 @@ def jeu_pendu (mot):
     
     while vie > 0 and not win :
         lettre = (input("Choisissez une lettre : "))    
-        if alphabet_restant.count(lettre) == 0 :  #La lettre a déjà été séléctionné 
-            print('La lettre a déjà été choisie, rééssayer avec une des lettres restantes : ')
+        if alphabet_restant.count(lettre) == 0 :  #La lettre a déjà été séléctionné ou le caractère saisi n'est pa une lettre minuscule
+            print('La lettre a déjà été choisie ou le caractère n\'est pas une lettre minuscule, rééssayer avec une des lettres restantes : ')
             afficher_mot(alphabet_restant)    
         else: 
             alphabet_restant.remove(lettre)
