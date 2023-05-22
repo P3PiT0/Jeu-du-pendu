@@ -25,12 +25,13 @@ def afficher_mot(mot):
 #PROCEDURE DE JEU 
 def jeu_pendu (mot):
     print('Bienvenue dans le jeu du pendu. Tu as 6 chances pour trouver le mot')
+    print(f'Le mot en question est composé de {len(mot)} lettres')
     vie = 6 
     win = False 
     mot_trouve=[]
     
     for i in mot: #INITIALISATION de l'alphabet et de mot_trouve
-        mot_trouve+=["__"]
+        mot_trouve+=["_"]
     alphabet_restant = list(string.ascii_lowercase)
     
     while vie > 0 and not win :
@@ -46,7 +47,7 @@ def jeu_pendu (mot):
                         mot_trouve[i]=lettre    
                 print(f"La lettre {lettre} est dans le mot. {vie} vie(s) restante(s)")
                 afficher_mot(mot_trouve)
-                if mot_trouve.count('__')==0:
+                if mot_trouve.count('_')==0:
                     win=True
             else: #La lettre n'est pas dans le mot                
                 vie-=1
