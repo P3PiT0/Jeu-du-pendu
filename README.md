@@ -6,6 +6,7 @@ Le dépôt Jeu-du-pendu contient un fichier _mot_pendu.txt_ contenant la liste d
 - A chaque erreur, vous perdez une vie. Pour choisir une lettre, il faut directement l'inscrire dans le terminal à la suite du message "Choisissez une lettre : ".
 - En cas de saisie d'une lettre déjà proposée, aucune vie n'est enlevée et la liste des lettres restantes est automatiquement affichée. 
 - Lorsque qu'une lettre est trouvée, le mot s'affiche avec toutes les lettres trouvées auparavant.
+- Le jeu ne prends pas en compte les caractères spéciaux ainsi que les accents et les majuscules. 
 
 Bon jeu ! 
 
